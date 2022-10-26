@@ -32,7 +32,7 @@ def __init__(self, x, y):
     self.x = y
     self.y = y
     self.type = random.randint(0, len(self.figure) - 1)
-    self.color = random.randint(1, len(colors) - 1)
+    self.color = random.randint(1, len(color) - 1)
     self.rotation = 0
 
 def image(self):
@@ -40,3 +40,5 @@ def image(self):
 
 def rotate(self):
     self.rotation = (self.rotation + 1) % len(self.figures(self.lengthS))
+
+    # testig new save
